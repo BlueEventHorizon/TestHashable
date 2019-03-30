@@ -11,24 +11,39 @@ import XCTest
 
 class TestHashableTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testMainBundle() {
+        let val = HashableTestModel_Main()
+        print(val.hashValue)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testMainTestsBundle() {
+        let val = HashableTestModel_MainTests()
+        print(val.hashValue)
     }
+}
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+open class HashableTestModel_MainTests: Hashable, Codable
+{
+    public var uniqueIdentifier: String
+    
+    public init()
+    {
+        self.uniqueIdentifier = String(arc4random())
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    // Equatable
+    static public func ==(lhs: HashableTestModel_MainTests, rhs: HashableTestModel_MainTests) -> Bool
+    {
+        return true
     }
+    
+    public func hash(into hasher: inout Hasher)
+    {
+        hasher.combine(uniqueIdentifier)
+    }
+}
 
+open class HashableTestModelChild_MainTests: HashableTestModel_MainTests
+{
+    
 }

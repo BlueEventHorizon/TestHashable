@@ -13,6 +13,14 @@
 		52C631AA224F1A7000B6B8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C631A9224F1A7000B6B8FF /* Assets.xcassets */; };
 		52C631AD224F1A7000B6B8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C631AB224F1A7000B6B8FF /* LaunchScreen.storyboard */; };
 		52C631B8224F1A7100B6B8FF /* TestHashableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C631B7224F1A7100B6B8FF /* TestHashableTests.swift */; };
+		52C631D0224F1B3B00B6B8FF /* HashableClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C631C7224F1B3B00B6B8FF /* HashableClasses.framework */; };
+		52C631D7224F1B3B00B6B8FF /* HashableClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C631D6224F1B3B00B6B8FF /* HashableClassesTests.swift */; };
+		52C631D9224F1B3B00B6B8FF /* HashableClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C631C9224F1B3B00B6B8FF /* HashableClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52C631DC224F1B3B00B6B8FF /* HashableClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C631C7224F1B3B00B6B8FF /* HashableClasses.framework */; };
+		52C631DD224F1B3B00B6B8FF /* HashableClasses.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52C631C7224F1B3B00B6B8FF /* HashableClasses.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52C631E6224F1B8000B6B8FF /* TestClassesInOtherBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C631E5224F1B8000B6B8FF /* TestClassesInOtherBundle.swift */; };
+		52C631E8224F1C2B00B6B8FF /* TestClassesInMainBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C631E7224F1C2B00B6B8FF /* TestClassesInMainBundle.swift */; };
+		52C631EA224F1CE200B6B8FF /* TestHashableTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C631E9224F1CE200B6B8FF /* TestHashableTests2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +31,42 @@
 			remoteGlobalIDString = 52C6319E224F1A6E00B6B8FF;
 			remoteInfo = TestHashable;
 		};
+		52C631D1224F1B3B00B6B8FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52C63197224F1A6E00B6B8FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C631C6224F1B3B00B6B8FF;
+			remoteInfo = HashableClasses;
+		};
+		52C631D3224F1B3B00B6B8FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52C63197224F1A6E00B6B8FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C6319E224F1A6E00B6B8FF;
+			remoteInfo = TestHashable;
+		};
+		52C631DA224F1B3B00B6B8FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52C63197224F1A6E00B6B8FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C631C6224F1B3B00B6B8FF;
+			remoteInfo = HashableClasses;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52C631E1224F1B3B00B6B8FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				52C631DD224F1B3B00B6B8FF /* HashableClasses.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		52C6319F224F1A6E00B6B8FF /* TestHashable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHashable.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +79,15 @@
 		52C631B3224F1A7100B6B8FF /* TestHashableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHashableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C631B7224F1A7100B6B8FF /* TestHashableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHashableTests.swift; sourceTree = "<group>"; };
 		52C631B9224F1A7100B6B8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C631C7224F1B3B00B6B8FF /* HashableClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashableClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C631C9224F1B3B00B6B8FF /* HashableClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashableClasses.h; sourceTree = "<group>"; };
+		52C631CA224F1B3B00B6B8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C631CF224F1B3B00B6B8FF /* HashableClassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashableClassesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C631D6224F1B3B00B6B8FF /* HashableClassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableClassesTests.swift; sourceTree = "<group>"; };
+		52C631D8224F1B3B00B6B8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C631E5224F1B8000B6B8FF /* TestClassesInOtherBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClassesInOtherBundle.swift; sourceTree = "<group>"; };
+		52C631E7224F1C2B00B6B8FF /* TestClassesInMainBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClassesInMainBundle.swift; sourceTree = "<group>"; };
+		52C631E9224F1CE200B6B8FF /* TestHashableTests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHashableTests2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C631DC224F1B3B00B6B8FF /* HashableClasses.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +103,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C631C4224F1B3B00B6B8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C631CC224F1B3B00B6B8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C631D0224F1B3B00B6B8FF /* HashableClasses.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +129,8 @@
 			children = (
 				52C631A1224F1A6E00B6B8FF /* TestHashable */,
 				52C631B6224F1A7100B6B8FF /* TestHashableTests */,
+				52C631C8224F1B3B00B6B8FF /* HashableClasses */,
+				52C631D5224F1B3B00B6B8FF /* HashableClassesTests */,
 				52C631A0224F1A6E00B6B8FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +140,8 @@
 			children = (
 				52C6319F224F1A6E00B6B8FF /* TestHashable.app */,
 				52C631B3224F1A7100B6B8FF /* TestHashableTests.xctest */,
+				52C631C7224F1B3B00B6B8FF /* HashableClasses.framework */,
+				52C631CF224F1B3B00B6B8FF /* HashableClassesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +151,7 @@
 			children = (
 				52C631A2224F1A6E00B6B8FF /* AppDelegate.swift */,
 				52C631A4224F1A6E00B6B8FF /* ViewController.swift */,
+				52C631E7224F1C2B00B6B8FF /* TestClassesInMainBundle.swift */,
 				52C631A6224F1A6E00B6B8FF /* Main.storyboard */,
 				52C631A9224F1A7000B6B8FF /* Assets.xcassets */,
 				52C631AB224F1A7000B6B8FF /* LaunchScreen.storyboard */,
@@ -91,12 +164,43 @@
 			isa = PBXGroup;
 			children = (
 				52C631B7224F1A7100B6B8FF /* TestHashableTests.swift */,
+				52C631E9224F1CE200B6B8FF /* TestHashableTests2.swift */,
 				52C631B9224F1A7100B6B8FF /* Info.plist */,
 			);
 			path = TestHashableTests;
 			sourceTree = "<group>";
 		};
+		52C631C8224F1B3B00B6B8FF /* HashableClasses */ = {
+			isa = PBXGroup;
+			children = (
+				52C631C9224F1B3B00B6B8FF /* HashableClasses.h */,
+				52C631E5224F1B8000B6B8FF /* TestClassesInOtherBundle.swift */,
+				52C631CA224F1B3B00B6B8FF /* Info.plist */,
+			);
+			path = HashableClasses;
+			sourceTree = "<group>";
+		};
+		52C631D5224F1B3B00B6B8FF /* HashableClassesTests */ = {
+			isa = PBXGroup;
+			children = (
+				52C631D6224F1B3B00B6B8FF /* HashableClassesTests.swift */,
+				52C631D8224F1B3B00B6B8FF /* Info.plist */,
+			);
+			path = HashableClassesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52C631C2224F1B3B00B6B8FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C631D9224F1B3B00B6B8FF /* HashableClasses.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		52C6319E224F1A6E00B6B8FF /* TestHashable */ = {
@@ -106,10 +210,12 @@
 				52C6319B224F1A6E00B6B8FF /* Sources */,
 				52C6319C224F1A6E00B6B8FF /* Frameworks */,
 				52C6319D224F1A6E00B6B8FF /* Resources */,
+				52C631E1224F1B3B00B6B8FF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52C631DB224F1B3B00B6B8FF /* PBXTargetDependency */,
 			);
 			name = TestHashable;
 			productName = TestHashable;
@@ -134,6 +240,43 @@
 			productReference = 52C631B3224F1A7100B6B8FF /* TestHashableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		52C631C6224F1B3B00B6B8FF /* HashableClasses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C631DE224F1B3B00B6B8FF /* Build configuration list for PBXNativeTarget "HashableClasses" */;
+			buildPhases = (
+				52C631C2224F1B3B00B6B8FF /* Headers */,
+				52C631C3224F1B3B00B6B8FF /* Sources */,
+				52C631C4224F1B3B00B6B8FF /* Frameworks */,
+				52C631C5224F1B3B00B6B8FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HashableClasses;
+			productName = HashableClasses;
+			productReference = 52C631C7224F1B3B00B6B8FF /* HashableClasses.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52C631CE224F1B3B00B6B8FF /* HashableClassesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C631E2224F1B3B00B6B8FF /* Build configuration list for PBXNativeTarget "HashableClassesTests" */;
+			buildPhases = (
+				52C631CB224F1B3B00B6B8FF /* Sources */,
+				52C631CC224F1B3B00B6B8FF /* Frameworks */,
+				52C631CD224F1B3B00B6B8FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52C631D2224F1B3B00B6B8FF /* PBXTargetDependency */,
+				52C631D4224F1B3B00B6B8FF /* PBXTargetDependency */,
+			);
+			name = HashableClassesTests;
+			productName = HashableClassesTests;
+			productReference = 52C631CF224F1B3B00B6B8FF /* HashableClassesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,6 +291,14 @@
 						CreatedOnToolsVersion = 10.2;
 					};
 					52C631B2224F1A7000B6B8FF = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 52C6319E224F1A6E00B6B8FF;
+					};
+					52C631C6224F1B3B00B6B8FF = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					52C631CE224F1B3B00B6B8FF = {
 						CreatedOnToolsVersion = 10.2;
 						TestTargetID = 52C6319E224F1A6E00B6B8FF;
 					};
@@ -168,6 +319,8 @@
 			targets = (
 				52C6319E224F1A6E00B6B8FF /* TestHashable */,
 				52C631B2224F1A7000B6B8FF /* TestHashableTests */,
+				52C631C6224F1B3B00B6B8FF /* HashableClasses */,
+				52C631CE224F1B3B00B6B8FF /* HashableClassesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +343,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52C631C5224F1B3B00B6B8FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C631CD224F1B3B00B6B8FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -197,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C631E8224F1C2B00B6B8FF /* TestClassesInMainBundle.swift in Sources */,
 				52C631A5224F1A6E00B6B8FF /* ViewController.swift in Sources */,
 				52C631A3224F1A6E00B6B8FF /* AppDelegate.swift in Sources */,
 			);
@@ -206,7 +374,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C631EA224F1CE200B6B8FF /* TestHashableTests2.swift in Sources */,
 				52C631B8224F1A7100B6B8FF /* TestHashableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C631C3224F1B3B00B6B8FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C631E6224F1B8000B6B8FF /* TestClassesInOtherBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C631CB224F1B3B00B6B8FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C631D7224F1B3B00B6B8FF /* HashableClassesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +402,21 @@
 			isa = PBXTargetDependency;
 			target = 52C6319E224F1A6E00B6B8FF /* TestHashable */;
 			targetProxy = 52C631B4224F1A7100B6B8FF /* PBXContainerItemProxy */;
+		};
+		52C631D2224F1B3B00B6B8FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C631C6224F1B3B00B6B8FF /* HashableClasses */;
+			targetProxy = 52C631D1224F1B3B00B6B8FF /* PBXContainerItemProxy */;
+		};
+		52C631D4224F1B3B00B6B8FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C6319E224F1A6E00B6B8FF /* TestHashable */;
+			targetProxy = 52C631D3224F1B3B00B6B8FF /* PBXContainerItemProxy */;
+		};
+		52C631DB224F1B3B00B6B8FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C631C6224F1B3B00B6B8FF /* HashableClasses */;
+			targetProxy = 52C631DA224F1B3B00B6B8FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -359,6 +559,7 @@
 		52C631BD224F1A7100B6B8FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6A5KP29BP;
@@ -377,6 +578,7 @@
 		52C631BE224F1A7100B6B8FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6A5KP29BP;
@@ -434,6 +636,105 @@
 			};
 			name = Release;
 		};
+		52C631DF224F1B3B00B6B8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D6A5KP29BP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HashableClasses/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beowulf-tech.HashableClasses";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52C631E0224F1B3B00B6B8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D6A5KP29BP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HashableClasses/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beowulf-tech.HashableClasses";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52C631E3224F1B3B00B6B8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6A5KP29BP;
+				INFOPLIST_FILE = HashableClassesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beowulf-tech.HashableClassesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHashable.app/TestHashable";
+			};
+			name = Debug;
+		};
+		52C631E4224F1B3B00B6B8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6A5KP29BP;
+				INFOPLIST_FILE = HashableClassesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beowulf-tech.HashableClassesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHashable.app/TestHashable";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,6 +761,24 @@
 			buildConfigurations = (
 				52C631C0224F1A7100B6B8FF /* Debug */,
 				52C631C1224F1A7100B6B8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C631DE224F1B3B00B6B8FF /* Build configuration list for PBXNativeTarget "HashableClasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C631DF224F1B3B00B6B8FF /* Debug */,
+				52C631E0224F1B3B00B6B8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C631E2224F1B3B00B6B8FF /* Build configuration list for PBXNativeTarget "HashableClassesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C631E3224F1B3B00B6B8FF /* Debug */,
+				52C631E4224F1B3B00B6B8FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
