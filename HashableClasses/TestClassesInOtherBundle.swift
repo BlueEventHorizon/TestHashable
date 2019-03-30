@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class HashableTestModel_Other: Hashable, Codable
+open class HashableTestModel_Other: Codable
 {
     public var uniqueIdentifier: String
     
@@ -18,19 +18,23 @@ open class HashableTestModel_Other: Hashable, Codable
     }
     
     // Equatable
-    static public func ==(lhs: HashableTestModel_Other, rhs: HashableTestModel_Other) -> Bool
-    {
-        return true
-    }
-    
+}
+
+extension HashableTestModel_Other: Hashable
+{
     public func hash(into hasher: inout Hasher)
     {
         hasher.combine(uniqueIdentifier)
     }
 }
 
+public func ==(lhs: HashableTestModel_Other, rhs: HashableTestModel_Other) -> Bool
+{
+    return true
+}
+
 open class HashableTestModelChild_Other: HashableTestModel_Other
 {
-    
+
 }
 

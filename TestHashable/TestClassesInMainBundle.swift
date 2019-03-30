@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class HashableTestModel_Main: Hashable, Codable
+open class HashableTestModel_Main: Codable
 {
     public var uniqueIdentifier: String
     
@@ -22,7 +22,10 @@ open class HashableTestModel_Main: Hashable, Codable
     {
         return true
     }
-    
+}
+
+extension HashableTestModel_Main: Hashable
+{
     public func hash(into hasher: inout Hasher)
     {
         hasher.combine(uniqueIdentifier)
